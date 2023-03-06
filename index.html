@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rising Challenges</title>
+	<link rel="stylesheet" href="css/fonts.css">
+
+	<style>
+		* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("bg2.jpg");
+  background-size: cover;
+}
+
+
+
+.wrapper {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  margin: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-family: "3dsweb", sans-serif;
+}
+
+
+.card {
+  width: 24rem;
+  height: 12rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #ffffff;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  background: #000000;
+  margin: 2rem;
+}
+.card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-out;
+}
+.card h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: "3dsweb", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.card p, .card a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+  font-size: 1.5rem;
+  font-family: "3dsweb", sans-serif;
+}
+.card p {
+  inset: auto auto 30px 30px;
+}
+.card strong {
+  font-size: 1.7rem;
+}
+.card:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: opacity inset 0.3s ease-out;
+  opacity: 0.2;
+}
+.card:hover p {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+.card:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 0.4;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+	</style>
+</head>
+<body>
+
+<div class="wrapper">
+	
+  <div class="card">
+    <img src="time.JPG" alt="">
+    <div class="card-content">
+      <h2>
+        Gain in Time
+      </h2>
+      <p>
+        <strong>Gain in Time</strong> <br>
+        Up to <strong>50% gain</strong>.
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="learn.JPG" alt="">
+    <div class="card-content">
+      <h2>
+        Quick ramp up
+      </h2>
+      <p>
+        <strong>Quick ramp up</strong> <br>
+        Just <strong>2 days</strong> training.
+      </p>
+    </div>
+  </div>
+
+    <div class="card">
+    <img src="update.JPG" alt="">
+    <div class="card-content">
+      <h2>
+        Full Associavity
+      </h2>
+      <p>
+        <strong>Full Associavity</strong> <br>
+       <strong>Fast update</strong> in case of design changes.
+      </p>
+    </div>
+  </div>
+
+
+</div>
+
+</body>
+</html>
